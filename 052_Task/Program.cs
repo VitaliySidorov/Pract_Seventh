@@ -45,6 +45,7 @@ void PrintArray2D(int[,] array) // Метод вывода массива в к�
 void AverageColumn(int[,] array2D)
 {
     double[] arrayAverage = new double[array2D.GetLength(1)]; // Меняем порядок, сначала фиксируем номер столбца
+    Console.WriteLine("Среднее арифметическое каждого столбца:");
     for (int j = 0; j <= array2D.GetLength(1) - 1; j++)
     {
         double tempAverage = 0;
@@ -67,5 +68,4 @@ int numRow = ReadNumber();
 int min = 0, max = 10; // Границы генерации случайных чисел
 int[,] array2D = FillIntArray2D(numString, numRow, min, max);
 PrintArray2D(array2D);
-Console.WriteLine("Среднее арифметическое каждого столбца:");
 AverageColumn(array2D);
