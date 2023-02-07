@@ -13,7 +13,7 @@ double[,] FillArray2D(int m, int n, int min, int max) // Метод заполн
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            // Приведение числа к виду с одним знаком после запятой
+            // Приведение сгенерированного случаного вещественного числа к виду с одним знаком после запятой
             array[i, j] = Math.Round(number.NextDouble() * (max - min) + min, 1);
         }
     }
