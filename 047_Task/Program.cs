@@ -48,6 +48,6 @@ Console.WriteLine("Программа заполнения массива раз
 Console.Write("Введите количество строк в массиве (m): ");
 int numString = ReadNumber();
 Console.Write("Введите количество столбцов в массиве (n): ");
-int numRow = ReadNumber();
+int numColumn = ReadNumber();
 int min = -10, max = 10; // Границы генерации случайных чисел
-PrintArray2D(FillArray2D(numString, numRow, min, max));
+PrintArray2D(FillArray2D(numString, numColumn, min, max));

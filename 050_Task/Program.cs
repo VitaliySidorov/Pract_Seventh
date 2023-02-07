@@ -63,11 +63,11 @@ Console.WriteLine("Программа поиска элемента по его 
 Console.Write("Введите количество строк в массиве (m): ");
 int numString = ReadNumber();
 Console.Write("Введите количество столбцов в массиве (n): ");
-int numRow = ReadNumber();
+int numColumn = ReadNumber();
 Console.Write("Введите позицию искомого элемента в массиве: ");
 int position = ReadNumber();
 int min = -10, max = 10; // Границы генерации случайных чисел
-int[,] array2D = FillIntArray2D(numString, numRow, min, max);
+int[,] array2D = FillIntArray2D(numString, numColumn, min, max);
 
 if (position > array2D.Length) // Проверка вхождения искомого числа в диапазон значений
     {
